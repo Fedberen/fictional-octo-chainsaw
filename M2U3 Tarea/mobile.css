@@ -1,0 +1,127 @@
+
+
+h1{
+    color:#000000;
+    text-align: center;
+    background: linear-gradient(to bottom, blue, lightblue);
+}
+
+h2{
+    color:rgb(0, 255, 221);
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+
+li{
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+    background-image: url("../Unidad_3/Boludeo/img/hiking-to-the-snowy-mountains-4k_1540755438.jpg");
+    width: 100%;
+    height: 100%;
+    position: sticky;
+    background-attachment: fixed;
+    
+ }
+
+
+
+.parrafo_perfil{ color: #000000;
+    font-family: 'Gloria Hallelujah', cursive;
+    
+}
+
+.contacto{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    background: linear-gradient( to bottom, blue, lightblue);
+    color: #000000;
+}
+
+.Musica{
+    column-count: 5;
+    column-gap: normal;
+}
+
+.Peliculas{
+    column-count: 5;
+    column-gap: normal;
+}
+
+.texto_formacion{
+    color: #000000;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 17px;
+    display: flex;
+    position: relative;
+    left: 20%;
+    text-align: center;
+    bottom: 225px;
+    border: 2px solid transparent;
+    width: 1050px;
+}
+
+
+.Perfil_texto{
+    display: flex;
+    position: absolute;
+    left: 20%;
+    bottom: 85%;
+
+}
+
+div.imagen {
+    display: flex;
+    position: relative;
+    right: 40%;
+    top: 55px;
+
+}
+
+.Titulo_formacion {
+    display: flex;
+    position: absolute;
+    left: 20%;
+    bottom: 80%;
+}
+
+.Ultima_parte1 {
+    display: flex;
+position: relative;
+bottom: 250px;
+}
+
+.Div_pasatiempos {
+    color: black;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: normal;
+    display: flex;
+    position: relative;
+    bottom: 240px;
+    width: 100%;
+    height: 50px;
+    border: 2px solid transparent;
+}
+
+.Ultima_Parte2 {
+    display: flex;
+    position: relative;
+    bottom: 220px;
+}
+
+.Ultima_Parte3 {
+    color:rgb(0, 255, 221);
+    font-family: 'Gloria Hallelujah', cursive;
+    display: flex;
+    position: relative;
+    bottom: 210px;
+}
+
+.Ultima_Parte4 {
+    display: flex;
+    position: relative;
+    bottom: 200px;
+    width: 3000px;
+}
