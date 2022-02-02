@@ -1,0 +1,77 @@
+.List_Title {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: aqua;
+}
+
+h1 {
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    width: 1000px;
+    text-align: center;
+    justify-content: center;
+
+                
+    margin: 0 auto;
+            
+    width:auto;
+    height:100px;
+    
+    background:transparent;
+    color:rgb(0, 0, 0);
+    
+    font-family:arial;
+
+    
+    text-align:center;
+    line-height: 100px;
+    
+    transition:all 0.3s ease;         
+}
+
+h1:hover{
+    box-shadow: inset 0 0 0 25px #eaa453;
+}
+
+body {
+    background-image: url("../Unidad_4/img/fondopantalla.jpg");
+    width: 100%;
+    height: 100%;
+    position: sticky;
+    background-attachment:fixed;
+}
+
+.Subtitle {
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.Lorem {
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    font-size: 20px;
+    top:  35px;
+}
+
+.Info_extract {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: aqua;
+}
+
+.Info_paragraph {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
+.Titles {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    font-size: 40px;
+    color: rgb(255, 197, 71);
+}
