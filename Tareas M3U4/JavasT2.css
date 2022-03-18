@@ -1,0 +1,56 @@
+.Boton_rojo{
+    background-color: red;
+    color: black;
+    padding: 15px 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border: 1px black solid;
+}
+
+.Boton_verde{
+    background-color: green;
+    color: black;
+    padding: 15px 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border: 1px black solid;
+}
+
+.Boton_azul{
+    background-color: blue;
+    color: black;
+    padding: 15px 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border: 1px black solid;
+}
+
+.alternar {
+    background: red;
+}
+
+.alternar_verde {
+    background: green;
+}
+
+.alternar_azul {
+    background: blue;
+}
+
+.alternar.activo {
+    background: white;
+    color: black;
+}
+

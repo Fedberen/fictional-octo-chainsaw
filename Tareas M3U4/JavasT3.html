@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="JavasT3.css">
+</head>
+
+    
+  <body style="text-align: center;">
+
+    <h1 style="color: black">
+        Contador de palabras de texto
+    </h1>
+
+    <p> Ingrese el texto en el cuadro a continuacion</p>
+
+    <textarea id="inputField" rows=10 cols="60">
+    </textarea>
+    <br><br>
+    
+<button class="Boton" onclick="Contar()" value="Contar">Iniciar Contador</button>
+<br><br>
+
+<p> Conteo de palabras:
+    <span id="Conteo">?</span>
+</p>
+
+  <script>
+
+    function Contar(){
+
+        var text = document
+                .getElementById("inputField").value;
+
+        var numpalabras = 0;
+
+        for (var i = 0; i < text.length; i++) {
+                var currentCharacter = text[i];
+
+           if (currentCharacter == " ") {
+                   numpalabras += 1;
+            }
+       }
+        
+    
+      numpalabras += 1;
+
+      document.getElementById("Conteo")
+                .innerHTML = numpalabras;
+
+    } 
+
+    </script>
+
+
+</html>

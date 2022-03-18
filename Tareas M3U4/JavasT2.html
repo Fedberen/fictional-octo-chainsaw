@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TareaJava2</title>
+    <link rel="stylesheet" href="JavasT2.css">
+</head>
+<body style = "text-align:center;">
+    <h1>Seleccionar color de fondo deseado:</h1>
+    <button class="Boton_rojo" onclick="a_rojo()">Color Rojo</button>
+
+    <button class="Boton_verde" onclick="a_verde()">Color Verde</button>
+
+    <button class="Boton_azul" onclick="a_azul()">Color Azul</button>
+
+    <p id = "Subtitulo1" style =
+    "color:white; font-size: 20px; font-weight: bold;">
+</p>
+
+    <script>
+
+
+            var Subtitulo = document.getElementById("Subtitulo1");
+            var str = "Click on button to change the background color";
+        
+           /* a rojo */
+        function a_rojo_cambio(color) {
+            document.body.style.background = color;
+        }
+
+        function a_rojo() {
+                a_rojo_cambio('red');
+                Subtitulo.innerHTML = "Color de fondo cambiado con exito a rojo";
+            }  
+
+            /* a rojo */
+
+            /* a verde */
+
+        function a_verde_cambio(color) {
+            document.body.style.background = color;
+        }
+
+        function a_verde() {
+                a_verde_cambio('green');
+                Subtitulo.innerHTML = "Color de fondo cambiado con exito a verde";
+            }  
+
+            /* a verde */
+
+
+            /* a azul */
+
+            function a_azul_cambio(color) {
+            document.body.style.background = color;
+        }
+
+        function a_azul() {
+                a_azul_cambio('blue');
+                Subtitulo.innerHTML = "Color de fondo cambiado con exito a azul";
+            }  
+
+            /* a azul */
+            
+
+   </script>
+
+</body>
+</html>
