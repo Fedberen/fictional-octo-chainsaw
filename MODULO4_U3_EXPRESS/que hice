@@ -1,0 +1,16 @@
+1ero: npx express-generator --view=hbs
+me intala todo en view=hbs que por alguna razon a la profe no le creo una carpeta a parte como a mi asi q el "npm i" siguiente lo tengo que ejectutar adentro de la "view=hbs"
+
+2do como tengo el packagejson con las dependencias tengo que instalarlas. de modo que pongo "npm i"
+
+3er instalo npm i nodemon (Es la primera libreria con la que estamos arrancando que permite que los cambios guardados los actualize automaticamente)
+
+4to vamos al package.json y donde dice "start: node" ponemos "start: nodemon" de modo tal que ahora cuando trabajo y uso f5 me actualiza todo, osea el guardar
+
+5to a diferencia de react tengo q en este caso automaticasmente ir a google y escribir el:http://localhost:3000/
+
+TAREA QUE HACER:
+PUEDO HACER: Voy a app.js y de ahi con appget voy poniendo que la pagina me traiga diferentes respuestas segun como ingresen su dominio: ej: la pagina de youtube. com es comun pero
+si traigo: youtube.com/recursos me puede traer no se algo q diga "seccion de recursos"
+
+O PUEDO HACER: en el app.js creo unos app.use con referencia a unas mapginas y despues creando distintos archivos js (en la seccion de routes) que llamen a otros hbs. De modo tal que aparezcan como botones hacia otras paginas
