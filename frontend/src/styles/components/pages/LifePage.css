@@ -1,0 +1,208 @@
+
+.holder {
+    width: 960px;
+    margin: 0 auto;
+}
+
+  
+  
+    .Life_body{
+    background-image: url("../../../../public/images/life/Evo2.jpg");
+    }
+  
+    .Def_life {
+        color: white;
+        font-size: xx-large;
+        background-image: linear-gradient(#5aaafc, black );
+        border-radius: 0.7pe;
+        }
+  
+    .holder_life {
+        width: 960px;
+        margin: 0 auto;
+        background-color: transparent;
+        border: 2px solid transparent;
+        border-radius: 5%;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+  
+
+  
+  @keyframes MiAnimacion1 {
+   from {background-color: rgba(200,200,200,.5);}
+   to {background-color: transparent;}
+  
+  }
+
+  .life_left{
+
+      border-radius: 0.7em;
+  }
+  
+  .holder_life{
+    animation-name: MiAnimacion1;
+    animation-duration: 4s;  
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border: groove 1px gray;
+  }
+
+     
+    .Parrafos {
+        color: white;
+        border: 1px dashed transparent;
+        border-radius: 0.7em;
+        margin: 1em 0;
+        padding: 1em;
+        overflow: hidden;
+    }
+  
+  
+    .holder_life .Teorias {
+        list-style-type: none;
+        flex-wrap: nowrap; 
+        justify-content: space-between;
+     }
+  
+  .Teorias {
+        width:200px;
+        padding:2em 1em 1em 1em;               
+        transition: all 3s ease;   
+        display:inline-table; /* IMPORTANTISIMO */
+  }
+  
+  .Teorias img {
+        margin:auto;
+        transform: scale(0.9);
+        transition: all 2s ease; 
+  }
+  
+  
+  .Teorias:hover {
+        background-color: rgba(200,200,200,.5);
+        border-radius: 10px;
+        cursor: pointer;
+  }
+      
+  .Teorias:hover img {
+  transform: scale(1);     
+  }  
+  
+  .Teorias:hover h2 {
+        color:#c9a833;         
+  }
+  
+  .Teorias_Desc{
+    color: white
+  }
+
+  /* Inicio animacion*/
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+
+h2{
+    color: #5aaafc;
+}
+
+span {
+  display: inline-block;
+  opacity: 0;
+  filter: blur(4px);
+  padding: 5px;
+  margin: 1px;
+  font-weight: 100;
+  font-size: larger;
+  color: #5aaafc;
+
+}
+
+span:nth-child(1) {
+  animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(2) {
+  animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(3) {
+  animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(4) {
+  animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(5) {
+  animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(6) {
+  animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(7) {
+  animation: fade-in 0.8s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(8) {
+  animation: fade-in 0.8s 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(9) {
+  animation: fade-in 0.8s 0.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(10) {
+  animation: fade-in 0.8s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(11) {
+  animation: fade-in 0.8s 1.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(12) {
+  animation: fade-in 0.8s 1.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(13) {
+  animation: fade-in 0.8s 1.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(14) {
+  animation: fade-in 0.8s 1.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(15) {
+  animation: fade-in 0.8s 1.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(16) {
+  animation: fade-in 0.8s 1.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(17) {
+  animation: fade-in 0.8s 1.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(18) {
+  animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+   }
+   /* Fin animacion*/
+

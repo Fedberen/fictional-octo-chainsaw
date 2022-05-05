@@ -1,0 +1,76 @@
+var createError = require('http-errors');
+var express = require('express');
+var path = require('path');
+var cookieParser = require('cookie-parser');
+var logger = require('morgan');
+var fileUpload = require('express-fileupload');
+var cors = require('cors');
+
+require('dotenv').config();
+var session = require('express-session'); // primer paso a hacer para crear variables de sesion, para no poder saltearse el login solamente cambiando el directorio
+
+var indexRouter = require('./routes/index');
+var usersRouter = require('./routes/users');
+var loginRouter = require('./routes/admin/login');
+var adminRouter = require('./routes/admin/novedades');
+var apiRouter = require('./routes/api')
+const { tmpdir } = require('os');
+
+var app = express();
+
+// view engine setup
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'hbs');
+
+app.use(logger('dev'));
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+app.use(cookieParser());
+app.use(express.static(path.join(__dirname, 'public')));
+app.use(fileUpload({
+  useTempFiles: true,
+  tempFileDir: '/tmp/'
+}));
+
+app.use(session({ //siempre, siempre... PERO SIEMPRE TIENE Q ESTAR ANTES DE LOS APP.USE Q ESTAN ABAJO
+  secret: 'Aminowana',
+  resave: false,
+  saveUninitialized: true
+}));
+
+secured = async (req, res, next) => {
+  try {
+    console.log(req.session.id_usuario);
+    if (req.session.id_usuario) {
+      next(); //Esto quiere decir que si recibe el id_usuario, hace un next() osea q pasa a la pagina de novedades como deberia de hacer comunmente. Pero si no lo recibe...
+    } else {
+      res.redirect('/admin/login');
+    }
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+app.use('/', indexRouter);
+app.use('/users', usersRouter);
+app.use('/admin/login', loginRouter);
+app.use('/admin/novedades', secured, adminRouter); //Aca agregue la palabra "secured" para que utilize ese if
+app.use('/api', cors(), apiRouter);
+
+// catch 404 and forward to error handler
+app.use(function (req, res, next) {
+  next(createError(404));
+});
+
+// error handler
+app.use(function (err, req, res, next) {
+  // set locals, only providing error in development
+  res.locals.message = err.message;
+  res.locals.error = req.app.get('env') === 'development' ? err : {};
+
+  // render the error page
+  res.status(err.status || 500);
+  res.render('error');
+});
+
+module.exports = app;

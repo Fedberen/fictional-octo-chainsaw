@@ -1,0 +1,167 @@
+.tecnology {
+    border: 1px solid gray;
+    border-radius: 0.7em;
+    margin: 1em 0;
+    padding: 1em;
+    overflow: hidden;
+}
+
+.tecnology.info {
+    width: 75%;
+}
+
+.tecnology .info h4 {
+    color: white;
+    font-size: 1.2em;
+    font-style: italic;
+    font-weight: 500;
+    margin: 0 0 1em;
+    background-image: linear-gradient(to right, #5aaafc , black);
+    padding-bottom:  0.5em;
+    overflow: hidden;
+}
+
+.tecnology .info p {
+    font-size: 0.8em;
+    line-height: 1.2em;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.tecnology img {
+    border-radius: 0.8;
+    object-fit: contain;
+    overflow:hidden;
+    width: 300px;
+    height: auto;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.tecnology:nth-child(even)  img {
+    float: right;
+    margin: 0 0 0 1em;
+}
+
+.tecnology:nth-child(odd) img {
+    float: left;
+    margin: 0 1em 0 0;
+}
+
+.tecnology:nth-child(odd) .info { 
+    float: right;
+}
+
+.tecnology:nth-child(odd) .info h4 { 
+    overflow: hidden;
+}
+
+.holder {
+    width: 960px;
+    margin: 0 auto;
+}
+
+h1{
+    color: white;
+}
+
+/* Inicio animacion*/
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+
+
+
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+
+span {
+  display: inline-block;
+  opacity: 0;
+  filter: blur(4px);
+  padding: 5px;
+  margin: 1px;
+  font-weight: 100;
+}
+
+span:nth-child(1) {
+  animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(2) {
+  animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(3) {
+  animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(4) {
+  animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(5) {
+  animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(6) {
+  animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(7) {
+  animation: fade-in 0.8s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(8) {
+  animation: fade-in 0.8s 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(9) {
+  animation: fade-in 0.8s 0.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(10) {
+  animation: fade-in 0.8s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(11) {
+  animation: fade-in 0.8s 1.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(12) {
+  animation: fade-in 0.8s 1.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(13) {
+  animation: fade-in 0.8s 1.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(14) {
+  animation: fade-in 0.8s 1.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(15) {
+  animation: fade-in 0.8s 1.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(16) {
+  animation: fade-in 0.8s 1.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(17) {
+  animation: fade-in 0.8s 1.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(18) {
+  animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+   }
+   /* Fin animacion*/
